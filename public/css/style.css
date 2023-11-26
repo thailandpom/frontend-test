@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+	font-family: 'Roboto';
+}
+body {
+	font-size: 20px;
+	font-weight: 400;
+	overflow-x: hidden;
+	width: 100%;
+}
+p, span {
+	font-weight: 400;
+}
+
+
+.main-layout {
+  width: 100%;
+  position: relative;
+  width: 100%;
+	overflow: hidden;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #FFFFFF;
+  background: #012168;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #012168;
+}
+
+.section-content {
+	background-color: #FFFFFF;
+	padding: 60px 0;
+}
+.text-title-section {
+	color: #E7E7E7;
+	font-size: 90px;
+	line-height: 105.47px;
+	height: 105px;
+}
+.content-title {
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 42px;
+	padding-left: 32px;
+}
+.text-number {
+	color: #000000;
+	position: absolute;
+	font-size: 18px;
+	top: 6px;
+	left: 0;
+	width: 22px;
+	height: 30px;
+	line-height: 21.09px;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+}
+.text-title {
+	color: #C2C2C2;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 42.19px;
+	letter-spacing: 1.5px;
+}
+.section-one {
+	position: relative;
+	display: block;
+	margin: 100px 0 0 0;
+	/* padding-top: 24px; */
+}
+.section-two {
+	position: relative;
+	display: block;
+	margin: 100px 0 0 0;
+	padding-top: 24px;
+}
+.padding-start {
+	/* padding-left: 40px; */
+}
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+.section-content .text-number::after{
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 5px;
+	border-radius: 2.5px;
+	top: 25px;
+	background-color: #603EBE;
+	left: 0;
+}
+.section-content.have-bg .text-number::after{
+	background-color: #FFFFFF;
+}
+.section-content.color-other .text-number{
+	color: #8F6BE8;
+}
+.content-description {
+	margin-top: 20px;
+}
+.content-description p {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+}
+.have-bg {
+	padding: 60px 0;
+}
+
+.img-centerion-one {
+	position: absolute;
+	width: 678px;
+	z-index: 999;
+	left: 175px;
+	top: -50px;
+}
+.img-centerion-two {
+	position: absolute;
+	width: 991px;
+	z-index: 999;
+	top: -90px;
+	left: 804px;
+}
+.show-desktop {
+	display: block;
+}
+.show-tablet {
+	display: none;
+}
+.show-mobile {
+	display: none;
+}
+
+@media (min-width: 1500px) {
+	.container {
+    max-width: 1400px;
+	}
+}
